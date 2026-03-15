@@ -165,7 +165,7 @@ Examples of tuned parameters:
 ```bash
 Model                                              Accuracy
 ---------------------------------------------------------------                                
-Logistic Regression	                                 ~0.46
+Logistic Regression	                                  ~0.46
 Random Forest	                                       ~0.68
 Decision Tree	                                       ~0.61
 ```
