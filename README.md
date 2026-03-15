@@ -19,7 +19,6 @@ Machine Learning | Data Analysis | Customer Support Analytics
 - Matplotlib
 - Seaborn
 - Scikit-learn
-- NLTK (initial text exploration)
 - Joblib
 - Google Colab 
 
@@ -31,15 +30,25 @@ The dataset contains 85,907 customer support interactions with multiple attribut
 **Key attributes include:**
 
 **- channel_name –** Customer support channel used
+
 **- category –** Main category of the reported issue
+
 **- Sub-category –** Detailed issue classification
+
 **- Customer_City –** City of the customer
+
 **- Product_category –** Category of the product involved
+
 **- Item_price –** Price of the product
+
 **- Tenure Bucket –** Experience level of the support agent
+
 **- Agent Shift –** Shift during which the agent handled the issue
+
 **- Issue_reported_at** – Time when issue was reported
+
 **- Issue_responded –** Time when the support agent responded
+
 **- CSAT Score –** Customer satisfaction score (target variable)
 
 ---------------------------------------------------------------------------------------------------------------------------
@@ -86,6 +95,7 @@ Statistical tests were used to validate relationships between variables.
 Response time influences customer satisfaction
 
 **Test Used:** ANOVA Test
+
 **Result:**  Response time has a statistically significant impact on CSAT scores.
 
 #### Hypothesis 2
@@ -93,6 +103,7 @@ Response time influences customer satisfaction
 Support channel affects customer satisfaction
 
 **Test Used:** Chi-Square Test
+
 **Result:** Support channel and CSAT score show a significant relationship.
 
 #### Hypothesis 3
@@ -100,6 +111,7 @@ Support channel affects customer satisfaction
 Agent experience influences CSAT score
 
 **Test Used:** Chi-Square Test
+
 **Result:** Agent experience level significantly influences customer satisfaction.
 
 ---------------------------------------------------------------------------------------------------------------------------
@@ -117,8 +129,11 @@ Agent experience influences CSAT score
 The models were evaluated using the following metrics:
 
 **- Accuracy**
+
 **- Precision**
+
 **- Recall**
+
 **- F1 Score**
 
 These metrics help measure prediction performance and model reliability.
@@ -148,8 +163,11 @@ Examples of tuned parameters:
 #### Model Comparison
 
 **Model**                                               **Accuracy**
+
 Logistic Regression	                                      ~0.46
+
 Random Forest	                                            ~0.68
+
 Decision Tree	                                            ~0.61
 
 After comparison, Random Forest was selected as the final model due to its strong performance and stability.
@@ -184,13 +202,18 @@ This indicates that faster response times and issue category play a major role i
 #### Model Saving
 
 The best performing model was saved using joblib for future use and deployment.
-**csat_prediction_model.joblib**
+
+```bash
+csat_prediction_model.joblib
+```
+
 This allows the trained model to be loaded and used for predicting customer satisfaction for new data.
 
 ----------------------------------------------------------------------------------------------------------------------------
 
 #### Project Structure
 
+```bash
 flipkart-csat-ml-project
 │
 ├── notebooks
@@ -201,6 +224,7 @@ flipkart-csat-ml-project
 │   └── Customer_support_data.csv
 │
 └── README.md
+```
 
 ----------------------------------------------------------------------------------------------------------------------------
 
