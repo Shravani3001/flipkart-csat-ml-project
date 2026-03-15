@@ -162,13 +162,15 @@ Examples of tuned parameters:
 
 #### Model Comparison
 
-**Model**                                               **Accuracy**
-
-Logistic Regression	                                      ~0.46
-
-Random Forest	                                            ~0.68
-
-Decision Tree	                                            ~0.61
+```bash
+**Model**                           |                    **Accuracy**
+                                    |
+Logistic Regression	                |                      ~0.46
+                                    |
+Random Forest	                      |                      ~0.68
+                                    |
+Decision Tree	                      |                      ~0.61
+```
 
 After comparison, Random Forest was selected as the final model due to its strong performance and stability.
 
